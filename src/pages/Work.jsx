@@ -3,7 +3,6 @@ function Work() {
     <div className="page">
       <section className="work-section">
         <div className="container">
-            <h3 className="section-title">Projects</h3>
           <div className="projects-list">
             {/* LanguageLink Project */}
             <div className="project-item">

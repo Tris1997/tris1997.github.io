@@ -1,4 +1,11 @@
 function Home() {
+  const scrollToAbout = () => {
+    document.querySelector('.about-section')?.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
+    });
+  };
+
   return (
     <div className="page">
       <section className="home-section">
@@ -15,25 +22,32 @@ function Home() {
             <p className="hero-subtitle">
               Software Engineer | Data Enthusiast | Problem Solver 
             </p>
+            <div className="scroll-arrow" onClick={scrollToAbout}>
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+            </div>
+
           </div>
         </div>
       </section>
 
       <section className="about-section">
         <div className="container">
-          <h3 className="section-title">About Me</h3>
+          <h3 className="section-title"></h3>
           <div className="about-content">
             <p>
-            Hello, my name is Tristan Clayman. I'm a Computer Science graduate from California State University, Long Beach, 
+            Hello! My name is Tristan Clayman. I'm a Computer Science graduate from California State University, Long Beach, 
             where I earned my Bachelor of Science in Computer Science.
             </p>
             <p>
-              Throughout my career, I've developed expertise in [key skills] and have worked on various 
-              projects that challenged me to grow both technically and professionally.
+            I'm an aspiring computer scientist with a strong interest in data, numbers, and statistical analysis. I enjoy building systems that use logic, patterns, 
+            and data driven insights. Through my projects, I've gained experience across full-stack development, 
+            databases, analytics, and distributed systems, continually pushing myself to grow both technically and professionally.
             </p>
             <p>
-              When I'm not working, you can find me [hobbies/interests]. I'm always excited to connect 
-              with fellow professionals and explore new opportunities.
+              I'm always excited to connect with others, learn new technologies, 
+              and explore opportunities where I can contribute and keep developing my craft.
             </p>
           </div>
         </div>
