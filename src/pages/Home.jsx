@@ -11,11 +11,11 @@ function Home() {
       <section className="home-section">
         <div className="container">
           <div className="hero-content">
-            <div className="profile-image">
-              <img
-                src="/profile.png"
-                alt="Profile"
-              />
+<           div className="profile-image">
+                <img
+                    src={`${import.meta.env.BASE_URL}profile.png`}
+                    alt="Profile"
+                />
             </div>
             
             <h2 className="hero-title">Tristan Clayman</h2>
