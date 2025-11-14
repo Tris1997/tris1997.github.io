@@ -41,7 +41,7 @@ function Home() {
             where I earned my Bachelor of Science in Computer Science.
             </p>
             <p>
-            I'm an aspiring computer scientist with a strong interest in data, numbers, and statistical analysis. I enjoy building systems that use logic, patterns, 
+            I'm an aspiring data scientist with a strong interest in data, numbers, and statistical analysis. I enjoy building systems that use logic, patterns, 
             and data driven insights. Through my projects, I've gained experience across full-stack development, 
             databases, analytics, and distributed systems, continually pushing myself to grow both technically and professionally.
             </p>
