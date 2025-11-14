@@ -13,7 +13,7 @@ function Home() {
           <div className="hero-content">
 <           div className="profile-image">
                 <img
-                    src={`${import.meta.env.BASE_URL}profile.png`}
+                    src={`${import.meta.env.BASE_URL}picgif.gif`}
                     alt="Profile"
                 />
             </div>
