@@ -37,11 +37,12 @@ function Home() {
           <h3 className="section-title"></h3>
           <div className="about-content">
             <p>
-            Hello! My name is <span className="highlight-name">Tristan Clayman</span>. I'm a Computer Science graduate from California State University, Long Beach, 
-            where I earned my Bachelor of Science in Computer Science.
+            Hello! My name is <span className="highlight-name">Tristan Clayman</span>. I'm a graduate from California State University, Long Beach, where
+            I earned my B.S. in Computer Science.
             </p>
             <p>
-            I'm an aspiring data scientist with a strong interest in data, numbers, and statistical analysis. I enjoy building systems that use logic, patterns, 
+            I'm an aspiring data scientist with a strong interest in data, numbers, and statistical analysis. I enjoy building systems that use 
+            logic, patterns, 
             and data driven insights. Through my projects, I've gained experience across full-stack development, 
             databases, data analysis and distributed systems, continually pushing myself to grow both technically and professionally.
             </p>
