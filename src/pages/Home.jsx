@@ -1,10 +1,16 @@
 function Home() {
-  const scrollToAbout = () => {
-    document.querySelector('.about-section')?.scrollIntoView({ 
-      behavior: 'smooth',
-      block: 'start'
+const scrollToAbout = () => {
+  const aboutSection = document.querySelector('.about-section');
+  if (aboutSection) {
+    const yOffset = 40; // Scroll 100px MORE down (adjust this number)
+    const y = aboutSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    
+    window.scrollTo({
+      top: y,
+      behavior: 'smooth'
     });
-  };
+  }
+};
 
   return (
     <div className="page">
@@ -39,16 +45,14 @@ function Home() {
             <p>
             Hello! My name is <span className="highlight-name">Tristan Clayman</span>. I'm a graduate from California State University, Long Beach, where
             I earned my B.S. in Computer Science.
+            I designed and built this website myself using JavaScript, React and Vite.
             </p>
             <p>
-            I'm an aspiring data scientist with a strong interest in data, numbers, and statistical analysis. I enjoy building systems that use 
-            logic, patterns, 
-            and data driven insights. Through my projects, I've gained experience across full-stack development, 
-            databases, data analysis and distributed systems, continually pushing myself to grow both technically and professionally.
+            I'm an aspiring data scientist with a strong interest in data, numbers, and statistical analysis. I enjoy building systems that use logic, patterns, and data driven insights. Through my projects, I've gained experience across full-stack development, databases, data analysis and distributed systems, 
+            continually pushing myself to grow both technically and professionally.
             </p>
             <p>
-              I'm always excited to connect with others, learn new technologies, 
-              and explore opportunities where I can contribute and keep developing my craft.
+              I'm always excited to connect with others and explore opportunities where I can contribute and keep developing my craft!
             </p>
           </div>
         </div>
