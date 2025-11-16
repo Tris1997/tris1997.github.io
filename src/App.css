@@ -149,23 +149,42 @@ body {
   margin: 0 auto;
   color: #ffffff;
   line-height: 1.75;
-  border: 2px solid #ffffff; /* White outline */
+  border: 2px solid #ffffff;
   border-radius: 8px;
   padding: 30px;
   background: linear-gradient(135deg, #1e3a52 0%, #2c4763 50%, #1a2f42 100%);
 }
 
-.about-content::before {
-  content: "About Me"; /* Add this back */
+/* About Me header */
+.about-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.about-main-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+/*.about-content::before {
+  content: "About Me"; 
   display: block;
   font-size: 2rem;
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 20px;
   padding-bottom: 15px;
-  border-bottom: 2px solid #ffffff; /* White line below title */
+  border-bottom: 2px solid #ffffff; 
   text-align: center;
-}
+}*/
 
 .about-content p {
   margin-bottom: 16px;
@@ -244,7 +263,7 @@ body {
 
 /* Education Section */
 .education-section {
-  background: transparent; /* Remove solid color */
+  background: transparent;
 }
 
 .education-content {
@@ -253,18 +272,41 @@ body {
   border: 2px solid #d1d5db;
   border-radius: 8px;
   padding: 30px;
-  background: linear-gradient(135deg, #1e3a52 0%, #2c4763 50%, #1a2f42 100%); /* Match main gradient */
+  background: linear-gradient(135deg, #1e3a52 0%, #2c4763 50%, #1a2f42 100%);
 }
 
-.education-content::before {
-  content: "EDUCATION";
-  display: block;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ffffff;
+/* Education header with Resume link */
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
   padding-bottom: 15px;
   border-bottom: 2px solid #d1d5db;
+}
+
+.education-main-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+
+.resume-link {
+  color: #b47bff !important;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border: 2px solid #b47bff;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.resume-link:hover {
+  background-color: #b47bff;
+  color: #ffffff !important;
+  transform: scale(1.05);
 }
 
 .education-item {
@@ -283,7 +325,6 @@ body {
   padding-bottom: 16px;
   margin-bottom: 32px;
 }
-
 
 .education-title {
   font-size: 1.5rem;
@@ -316,15 +357,17 @@ body {
   color: #ffffff;
   line-height: 1.8;
 }
+
 .education-subtitle li::marker{
   color: #b47bff;
 }
+
 .education-list li {
   margin-bottom: 8px;
 }
 
 .education-list li::marker {
-  color: #b47bff; /* Purple dots */
+  color: #b47bff;
 }
 
 .education-item:last-child {
@@ -400,10 +443,10 @@ a.footer-link:hover {
   border: 2px solid #d1d5db;
   border-radius: 8px;
   padding: 30px;
-  background: linear-gradient(135deg, #1e3a52 0%, #2c4763 50%, #1a2f42 100%); /* Match main gradient */
+  background: linear-gradient(135deg, #1e3a52 0%, #2c4763 50%, #1a2f42 100%);
 }
 
-.projects-list::before {
+/* .projects-list::before {
   content: "PROJECTS";
   display: block;
   font-size: 1.5rem;
@@ -412,7 +455,7 @@ a.footer-link:hover {
   margin-bottom: 20px;
   padding-bottom: 15px;
   border-bottom: 2px solid #d1d5db;
-}
+} */
 
 .project-item {
   margin-bottom: 40px;
@@ -425,9 +468,21 @@ a.footer-link:hover {
   margin-bottom: 0;
   padding-bottom: 0;
 }
+.projects-main-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
 
-.project-header {
-  margin-bottom: 12px;
+/* Projects header */
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #d1d5db;
 }
 
 .project-name {

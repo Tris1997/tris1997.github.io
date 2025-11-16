@@ -4,6 +4,11 @@ function Work() {
       <section className="work-section">
         <div className="container">
           <div className="projects-list">
+            {/* Header with PROJECTS title */}
+            <div className="projects-header">
+              <h3 className="projects-main-title">PROJECTS</h3>
+            </div>
+
             {/* LanguageLink Project */}
             <div className="project-item">
               <div className="project-header">
