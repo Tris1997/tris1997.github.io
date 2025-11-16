@@ -173,7 +173,8 @@ body {
 
 /* Work Section */
 .work-section {
-  background: transparent; /* Remove solid color */
+  background: transparent;
+  padding-bottom: 40px; /* Remove solid color */
 }
 
 .projects-grid {

@@ -2,7 +2,7 @@ function Home() {
 const scrollToAbout = () => {
   const aboutSection = document.querySelector('.about-section');
   if (aboutSection) {
-    const yOffset = 40; // Scroll 100px MORE down (adjust this number)
+    const yOffset = 50; // Scroll 100px MORE down (adjust this number)
     const y = aboutSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
     
     window.scrollTo({
